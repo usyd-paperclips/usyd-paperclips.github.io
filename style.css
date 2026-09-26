@@ -1,0 +1,333 @@
+/* Lavender from the Paperclips logo */
+:root{--lavender: #d2d0ea; --lavender-dark: #5e4fae; --brown: #3b2a1d}
+
+html{background-color: lightgoldenrodyellow; overflow-y: scroll}
+
+body{width: 50%; max-width: 720px; margin: auto}
+
+nav{background-color:burlywood; padding: 12px 10px; border-bottom: 5px solid var(--lavender);}
+
+a{margin-left: 10px; text-decoration: none; font-family: "Lato"; font-weight: 700;
+}
+
+a, a:visited{color: var(--brown)}
+
+p a, li a{margin-left: 0; text-decoration: underline; text-decoration-thickness: 1px; text-decoration-color: var(--lavender-dark); text-underline-offset: 3px}
+
+nav a{margin: 0 8px}
+
+nav a[aria-current="page"]{text-decoration: underline; text-decoration-color: var(--lavender-dark);
+    text-decoration-thickness: 1.5px; text-underline-offset: 6px}
+
+a:hover{color: var(--lavender-dark)}
+
+.p1{color:crimson}
+
+.p2{color:blue}
+
+p {font-family: "Lato"; line-height: 1.45;}
+
+h1, h2, h3{font-family: "Lato";}
+
+body > h1{margin: 24px 0 20px}
+
+h2{margin: 28px 0 8px}
+
+li{font-family: "Lato"; line-height: 1.45;}
+
+ul{list-style: none; padding-left: 4px}
+
+ul li{position: relative; padding-left: 22px}
+
+ul li::before{
+
+    content: ""; position: absolute; left: 2px; top: calc(0.725em - 8px);
+    width: 9px; height: 16px; background: url("images/list-bullet.svg") no-repeat center / contain;
+}
+
+
+.photo-right{
+
+    float: right; margin: 0 0 10px 20px;
+}
+
+aside{
+
+    float:right; width:280px; display: block; text-align: center;
+    background-color: var(--lavender); margin: 0 0 16px 24px; padding: 12px 16px;
+    border-radius: 4px;
+    font-family: "Lato";
+}
+
+.logo{
+
+    float: left; margin: 4px 20px 12px 0
+}
+
+aside blockquote{margin: 8px 0 12px; font-style: italic; line-height: 1.5}
+
+header{background-image:url("images/header-banner-brown.svg"); background-size: cover; padding-top: 28px; margin-top: 30px; }
+
+header h1{color: rgb(255, 255, 255, 0.8); margin: 0 0 22px 30px; font-size: 40px;}
+
+th, td {font-family: "Lato";
+
+    border: solid black 1px; padding: 5px;
+    text-align: center;
+
+}
+
+table{border-collapse: collapse;}
+
+caption{
+    font-family: "Lato"; font-size: 24px; padding: 10px; font-weight: 900;
+
+}
+
+th{
+
+    background-color: saddlebrown;
+    color: white;
+}
+
+img{max-width: 100%; height: auto;}
+
+
+/* "The nerdy bit" dropdown */
+
+details{
+
+    background-color: var(--lavender); padding: 10px 16px; margin: 20px 0; clear: both;
+    border-radius: 4px;
+    font-family: "Lato";
+}
+
+summary{font-weight: 700; cursor: pointer;}
+
+summary:hover{color: var(--lavender-dark)}
+
+details p{margin-bottom: 4px}
+
+/* Discussions page: one collapsible box per session */
+
+.sessions details{margin: 12px 0}
+
+.sessions summary{font-size: 17px}
+
+.topics li{margin-bottom: 6px}
+
+.topic-question{display: block; font-size: 14px; line-height: 1.4; opacity: 0.8}
+
+/* On devices with a mouse, show each question as a tooltip on hover instead */
+@media (hover: hover){
+
+    .topics li strong{text-decoration: underline dotted rgba(74, 61, 143, 0.5); text-underline-offset: 4px; cursor: default}
+
+    .topic-question{
+
+        position: absolute; left: 22px; top: calc(100% + 4px); z-index: 5;
+        width: max-content; max-width: 380px; padding: 8px 12px; border-radius: 6px;
+        background-color: #e7e5f4; box-shadow: 0 3px 10px rgba(43, 33, 28, 0.18);
+        opacity: 0; visibility: hidden; transition: opacity 0.15s;
+    }
+
+    .topics li:hover .topic-question, .topics li:focus .topic-question{opacity: 1; visibility: visible}
+}
+
+.session-question{display: block; font-size: 14px; font-weight: 400; line-height: 1.4; opacity: 0.8}
+
+.session-question{margin: 4px 0 2px 18px}
+
+
+.sessions details[open] summary{margin-bottom: 8px}
+
+.signoff{font-style: italic}
+
+/* Drawing (The Lore page) */
+
+figure.drawing{clear: both; margin: 20px 0}
+
+figure.drawing img{display: block; width: 100%; border-radius: 4px}
+
+figure.drawing figcaption{font-family: "Lato"; font-size: 14px; font-style: italic; margin-top: 6px; opacity: 0.8}
+
+/* Quote box (The Lore page) */
+
+blockquote.quote{
+
+    clear: both; margin: 20px 0; padding: 14px 20px 6px;
+    background-color: #e7e5f4; border-left: 4px solid #a19776; border-radius: 4px;
+}
+
+blockquote.quote p{font-style: italic; margin-top: 0}
+
+blockquote.quote p.quote-source{font-style: normal; font-size: 14px; text-align: right}
+
+.coming-soon{font-style: italic; opacity: 0.8}
+
+[hidden]{display: none !important}
+
+
+/* Gallery, based on the 2nd World Problems about us page */
+
+.wholegallery{
+
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 32px; margin: 24px 0;
+}
+
+div.gallery {
+    background-color: white;
+    padding: 10px 10px 4px;
+    box-shadow: 0 2px 8px rgba(59, 42, 29, 0.25);
+}
+
+div.gallery > a {
+    display: block;
+    margin: 0;
+}
+
+div.gallery img {
+    display: block;
+    width: 100%;
+}
+
+div.desc {
+    padding: 14px 6px 16px;
+    text-align: center;
+    font-family: "Lato";
+    font-weight: 300;
+}
+
+div.desc .name{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.placeholder{background-color: yellow;}
+
+
+/* Meetup button, based on the 2nd World Problems tickets button */
+
+a.meetupbtn, a.meetupbtn:visited{
+
+    display: inline-block; margin: 8px 0 4px; padding: 14px 26px;
+    background-color: var(--brown); color: lightgoldenrodyellow;
+    border-radius: 40px;
+}
+
+a.meetupbtn:hover{background-color: var(--lavender-dark); color: white}
+
+
+/* Supported by (support page) */
+
+.supporter{
+
+    border-top: 1px solid rgba(59, 42, 29, 0.2); padding: 28px 4px 12px; margin: 0;
+}
+
+h2 + .supporter{margin-top: 20px}
+
+a.supporter-logo{
+
+    display: flex; align-items: center; gap: 14px; margin: 0 0 18px;
+    font-size: 18px; font-weight: 900; color: var(--brown);
+}
+
+a.supporter-logo img{display: block; border-radius: 4px; height: auto}
+
+a.supporter-logo:hover{color: var(--lavender-dark)}
+
+.usu-clubs{width: 180px}
+
+.supporter p{margin-top: 0}
+
+.supporter p.disclaimer{font-size: 13px; color: #6b5a4b; line-height: 1.4}
+
+
+/* How to join steps (contact page) */
+
+ol.steps{padding-left: 22px}
+
+ol.steps li{margin-bottom: 8px; padding-left: 4px}
+
+ol.steps li::marker{font-weight: 900; color: var(--lavender-dark)}
+
+
+/* Footer */
+
+footer{
+
+    margin: 60px 0 30px; padding: 4px 20px; background-color: burlywood;
+    border-top: 5px solid var(--lavender); text-align: center; font-size: 14px;
+}
+
+
+
+footer a.footer-usu{display: inline-block; margin: 0 0 14px}
+
+footer a.footer-usu img{display: block}
+
+/* Responsive */
+
+@media (max-width: 1100px){
+
+    body{width: 80%}
+}
+
+@media (max-width: 700px){
+
+    body{width: auto; margin: 0 16px}
+
+    footer{margin-bottom: 16px}
+
+    header{padding-top: 24px; margin-top: 0}
+
+    header h1{margin: 0 0 18px 16px; font-size: 32px}
+
+    nav{display: flex; flex-wrap: wrap; gap: 8px 0; padding: 10px 6px}
+
+    aside{float: none; width: auto; margin: 0 0 20px}
+
+    body > h1{margin: 20px 0 16px}
+
+    .logo, .photo-right img{width: 110px}
+}
+
+
+/* ---------- Theme: four colours ----------
+   Beige (page), brown (banner, button, stripes, text), lavender (nav, footer, boxes; from the logo)
+   and one purple (links, bullets, underlines).
+   Delete everything from here down to go back to the yellow and tan look. */
+
+:root{--brown: #46332a; --lavender-dark: #4a3d8f}
+
+html{background-color: #f0e9dd}
+
+body{color: #2b211c}
+
+header{background-image: url("images/header-banner-brown.svg")}
+
+nav{background-color: var(--lavender); border-bottom-color: #a19776}
+
+footer{background-color: var(--lavender); border-top-color: #a19776}
+
+a, a:visited, nav a, nav a:visited{color: var(--lavender-dark)}
+
+a:hover, nav a:hover{color: var(--brown)}
+
+a.supporter-logo, a.supporter-logo:visited{color: var(--brown)}
+
+a.supporter-logo:hover{color: var(--lavender-dark)}
+
+details{background-color: #e7e5f4}
+
+a.meetupbtn, a.meetupbtn:visited{background-color: var(--brown); color: #f0e9dd}
+
+a.meetupbtn:hover{background-color: var(--lavender-dark); color: #ffffff}
+
+.supporter{border-top-color: rgba(70, 51, 42, 0.2)}
+
+.supporter p.disclaimer{color: #6e6259}
+
+div.gallery{box-shadow: 0 2px 8px rgba(70, 51, 42, 0.2)}
