@@ -145,6 +145,13 @@ details p{margin-bottom: 4px}
 
 /* Drawing (The Lore page) */
 
+/* Drawing and logo side by side, same height (widths match the 4:3 and 1:1 image shapes) */
+.logo-pair{display: flex; gap: 14px; align-items: flex-start; clear: both; margin: 20px 0}
+
+.logo-pair figure.drawing{flex: 4 1 0; margin: 0; min-width: 0}
+
+.logo-pair figure.logo-final{flex: 3 1 0}
+
 figure.drawing{clear: both; margin: 20px 0}
 
 figure.drawing img{display: block; width: 100%; border-radius: 4px}
