@@ -146,11 +146,12 @@ details p{margin-bottom: 4px}
 /* Drawing (The Lore page) */
 
 /* Drawing and logo side by side, same height (widths match the 4:3 and 1:1 image shapes) */
-.logo-row{display: flex; gap: 20px; align-items: flex-start; clear: both; margin: 12px 0 20px}
+/* Images float left so the paragraph wraps beside and then underneath them */
+.logo-row{display: flow-root; clear: both; margin: 12px 0 20px}
 
-.logo-row > p{flex: 1 1 0; margin-top: 0}
+.logo-row > p{margin-top: 0}
 
-.logo-pair{display: flex; gap: 10px; align-items: flex-start; flex: 0 0 410px}
+.logo-pair{display: flex; gap: 10px; align-items: flex-start; float: left; width: 410px; margin: 4px 20px 8px 0}
 
 .logo-pair figure.drawing{flex: 4 1 0; margin: 0; min-width: 0}
 
@@ -304,9 +305,7 @@ footer a.footer-usu img{display: block}
 
     .logo, .photo-right img{width: 110px}
 
-    .logo-row{flex-direction: column; gap: 12px}
-
-    .logo-pair{flex-basis: auto; width: 100%}
+    .logo-pair{float: none; width: 100%; margin: 0 0 12px}
 }
 
 
