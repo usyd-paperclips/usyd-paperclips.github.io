@@ -191,7 +191,7 @@ blockquote.quote p.quote-source{font-style: normal; font-size: 14px; text-align:
 /* One person per row: photo on the left, name, role and bio on the right */
 div.gallery {
     display: grid; grid-template-columns: 200px 1fr; gap: 20px; align-items: start;
-    background-color: white;
+    background-color: #e2dfff90;
     padding: 12px;
     border: 1px solid rgba(70, 51, 42, 0.15);
 }
