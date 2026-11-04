@@ -357,3 +357,9 @@ a.meetupbtn:hover{background-color: var(--lavender-dark); color: #ffffff}
 .supporter p.disclaimer{color: #6e6259}
 
 div.gallery{box-shadow: none}
+
+/* Opportunities section */
+.topics li > a {
+    display: inline-block;
+    margin-top: 5px;
+}
