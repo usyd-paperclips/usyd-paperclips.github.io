@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Discussions | Paperclips</title>
+    <title>Events and Discussions | Paperclips</title>
     <link rel="icon" type="image/png" href="images/no-hand-paperclips-logo_Hand%20only.png">
     <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -12,63 +13,72 @@
 
 <body>
 
-
     <header>
 
-        <h1> Paperclips</h1>
+        <h1>Paperclips</h1>
 
+        <nav>
+            <a href="index.html">Paperclips</a>
+            <a href="about.html">About Us</a>
+            <a href="discussions.html" aria-current="page">Discussions</a>
+            <a href="support.html">Support Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="the-lore.html">The Lore</a>
+        </nav>
 
-    <nav>
-       
-        <a href="index.html">Paperclips</a>
-        <a href="about.html">About Us</a>
-        <a href="discussions.html" aria-current="page">Discussions</a>
-        <a href="support.html">Support Us</a>
-        <a href="contact.html">Contact</a>
-        <a href="the-lore.html">The Lore</a>
-    
-    </nav> 
+    </header>
 
-</header>
+    <h1>Discussions</h1>
 
-<h1>Discussions</h1>
+    <p>A record of what we've talked about. Click a session to see what we explored and anything worth reading beforehand (or after).</p>
 
-<!-- COMING SOON: delete the next paragraph and the word "hidden" on the two elements after it once you've added a real session -->
-<p class="coming-soon">Notes from our discussions will appear here after our first meetup.</p>
+    <section class="sessions">
 
-<p hidden>A record of what we've talked about. Click a session to see the questions we explored and anything worth reading
-beforehand (or after).</p>
+        <!-- To add a session: copy the <details> block below, paste it at the top of the list (newest first) and edit it. -->
 
-<section class="sessions" hidden>
+        <details>
+            <summary>
+                <span>Societal Resilience: The Age of AI</span>
+                <span class="session-question">16 October 2026</span>
+            </summary>
 
-<!-- To add a session: copy the <details> block below, paste it at the top of the list (newest first) and edit it. -->
+            <p>
+                AI is advancing rapidly, but society may not be ready for what's coming.
+                Could AI trigger a crisis, and what can we do to prepare?
+                At our first Paperclips event, we explored these questions through an
+                introductory briefing, conversations with AI safety professionals,
+                and an interactive wargame.
+            </p>
 
-<!-- PLACEHOLDER: replace with a real session -->
-<details>
-    <summary><span class="placeholder">[Session title]</span><span class="session-question"><span class="placeholder">[Date]</span></span></summary>
+            <img
+                src="images/societal-resilience.jpg"
+                alt="Paperclips' Societal Resilience: The Age of AI event"
+                class="session-photo"
+            >
 
-    <p class="placeholder">[One or two sentences on what we discussed.]</p>
+            <p><strong>What we did</strong></p>
+            <ul>
+                <li>AI briefing: An introduction to recent AI developments, what's at stake, and what we can do about it.</li>
+                <li>Wargame: Worked in teams to navigate a hypothetical AI crisis and make decisions that could shape society's future.</li>
+                <li>Networking: Connected with AI safety professionals and other University of Sydney students over free food and dessert.</li>
+            </ul>
 
-    <p><strong>Questions we explored</strong></p>
-    <ul>
-        <li class="placeholder">[Question one?]</li>
-        <li class="placeholder">[Question two?]</li>
-    </ul>
+            <p>
+                The event brought together students from different academic backgrounds
+                to think about the societal implications of increasingly capable AI systems.
+                No prior knowledge of AI was needed.
+            </p>
 
-    <p><strong>Reading</strong></p>
-    <ul>
-        <li class="placeholder">[Article or paper title, with a link]</li>
-    </ul>
-</details>
+        </details>
 
-</section>
+    </section>
 
-<p>Got a topic you'd love to talk about? <a href="contact.html">Let us know</a>.</p>
+    <p>Got a topic you'd love to talk about? <a href="contact.html">Let us know</a>.</p>
 
-<footer>
-    <p>Paperclips &middot; University of Sydney &middot; Instagram: <a href="https://www.instagram.com/usyd.paperclips/">usyd.paperclips</a></p>
-    <a class="footer-usu" href="https://usu.edu.au/" target="_blank" rel="noopener"><img src="images/usu-clubs-logo-black.png" alt="USU Clubs" width="110" height="17"></a>
-</footer>
+    <footer>
+        <p>Paperclips &middot; University of Sydney &middot; Instagram: <a href="https://www.instagram.com/usyd.paperclips/">usyd.paperclips</a></p>
+        <a class="footer-usu" href="https://usu.edu.au/" target="_blank" rel="noopener"><img src="images/usu-clubs-logo-black.png" alt="USU Clubs" width="110" height="17"></a>
+    </footer>
 
 </body>
 </html>
